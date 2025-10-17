@@ -1,16 +1,16 @@
 function determineGiscusTheme() {
-  
-    let theme =
-      localStorage.getItem("theme") ||
-      document.documentElement.getAttribute("data-theme") ||
-      "system";
 
-    if (theme === "dark") return "dark";
-    if (theme === "light") return "light";
+  let theme =
+    localStorage.getItem("theme") ||
+    document.documentElement.getAttribute("data-theme") ||
+    "system";
 
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    return prefersDark ? "dark" : "light";
-  
+  if (theme === "dark") return "dark";
+  if (theme === "light") return "light";
+
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return prefersDark ? "dark" : "light";
+
 }
 
 (function setupGiscus() {
