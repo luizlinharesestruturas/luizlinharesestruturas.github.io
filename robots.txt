@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://luizlinharesestruturas.github.io/sitemap.xml
